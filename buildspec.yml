@@ -37,7 +37,7 @@ artifacts:
   files:
     - '**/*'
     - imagedefinitions.json
-  base-directory: './build/libs'
+  base-directory: 'target'
 reports:
       test-report-group: #Junit reports
         files:
