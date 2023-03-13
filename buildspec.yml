@@ -12,7 +12,7 @@ phases:
 
   install:
     runtime-versions:
-      java: corretto11
+      java: corretto8
 
   build:
     commands:
@@ -34,10 +34,7 @@ phases:
 
 
 artifacts:
-  files:
-    - '**/*'
-    - imagedefinitions.json
-  base-directory: 'target'
+  files:  imagedefinitions.json 
 reports:
       test-report-group: #Junit reports
         files:
