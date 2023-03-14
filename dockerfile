@@ -1,5 +1,4 @@
-FROM openjdk:8-jdk-alpine
-
-ARG JAR_FILE=target/*0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} /app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]l
+FROM openjdk:8
+EXPOSE 8080
+ADD target/maths-service.jar maths-service.jar 
+ENTRYPOINT ["java","-jar","/maths-service.jar"]
